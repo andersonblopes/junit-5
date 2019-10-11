@@ -10,26 +10,18 @@ class StringTest {
 
 	@Test
 	void length_basic() {
-		int actualLength = "ABCD".length();
-		int expectedLength = 4;
-		assertEquals(expectedLength, actualLength);
+		assertEquals(4, "ABCD".length());
 	}
 	
 	@Test
 	void toUpperCase_basic() {
-		String str = "abcd";
-		String result = str.toUpperCase();
-		assertNotNull(result);
-		assertEquals("ABCD", result);
+		assertNotNull("abcd".toUpperCase());
+		assertEquals("ABCD", "abcd".toUpperCase());
 	}
 	
 	@Test
 	void contains_basic() {
-		String str = "abcdefgh";
-		boolean result = str.contains("ijk");
-		assertFalse(result);
+		assertFalse("abcdefgh".contains("ijk"));
 	}
-	             
-			
 
 }
