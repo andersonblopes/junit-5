@@ -105,4 +105,7 @@ hs_err_pid*
 ## ignoring target file
 target/
 
+*.idea
+
 # End of https://www.gitignore.io/api/java,eclipse,java-web,code-java
+/junit-5.iml
